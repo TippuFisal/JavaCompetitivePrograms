@@ -9,7 +9,6 @@ prints out te whole multiplication table of an entered number for his students,
 can you help him to write a program in java ?
 
 */
-
 import java.util.Scanner;
 
 public class Task_1 {
