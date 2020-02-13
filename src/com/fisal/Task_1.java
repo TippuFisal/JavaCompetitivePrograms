@@ -20,22 +20,34 @@ public class Task_1 {
         multiplication();
     }
 
+    /*
+    *
+    getting Input value from User
+    *
+    */
     public static void gettngInputFromUser() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Number of Multiplication");
         input_1 = sc.nextInt();
-        System.out.println("Enter the limit of Table for Multipliation");
-        input_2  = sc.nextInt();
+        //Condition if input_1 value not equals to 0
+        if(input_1 != 0) {
+            System.out.println("Enter the limit of Table for Multipliation");
+            input_2 = sc.nextInt();
+        }
+        // if input_1 equals to 0 this else part will execute
+        else {
+            System.out.println("Zero into anything Zero");
+        }
     }
 
+    //Tables Calculation Method
     public static void multiplication() {
-        if (input_1 > 0) {
             for (int i = 0; i <= input_2; i++) {
                 for (int j = i; j == i; j++) {
                     int value = input_1 * j;
                     System.out.println(input_1+" * "+i+ " = " +value);
                 }
             }
+
         }
     }
-}
