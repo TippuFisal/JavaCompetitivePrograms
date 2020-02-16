@@ -34,7 +34,7 @@ public class Task_5 {
                }
            }
        }
-        System.out.println(shoshanna[shoshanna.length-1]);
+        System.out.println("Best Score of Shoshanna : "+shoshanna[shoshanna.length-1]);
     }
 
 }
