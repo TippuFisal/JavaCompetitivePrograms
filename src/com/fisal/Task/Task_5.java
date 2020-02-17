@@ -14,7 +14,7 @@ public class Task_5 {
    static int shoshanna [] = {66,57,54,53,64,52,59};
 
     public static void main(String[] args) {
-        method_1();
+        method_2();
     }
 
     public static void method_1(){
@@ -34,7 +34,28 @@ public class Task_5 {
                }
            }
        }
-        System.out.println("Best Score of Shoshanna : "+shoshanna[shoshanna.length-1]);
+        System.out.println("Highest Second of Shoshanna : "+shoshanna[shoshanna.length-1]);
+    }
+
+
+    //This method used in reference
+    public static void method_2(){
+        int temporary=0;
+        for(int x=0;x<shoshanna.length;x++){
+            int flag_value=0;
+            for (int y=1;y<shoshanna.length-1;y++){
+                if(shoshanna[y-1]>shoshanna[y]){
+                    temporary = shoshanna[y-1];
+                    shoshanna[y-1]=shoshanna[y];
+                    shoshanna[y]=temporary;
+                    flag_value=1;
+                }
+            }
+            if (flag_value==0){
+                break;
+            }
+        }
+            System.out.println("Best score is "+shoshanna[0]);
     }
 
 }
