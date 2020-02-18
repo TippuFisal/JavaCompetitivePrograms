@@ -17,14 +17,14 @@ public class Task_7 {
   static   long bus_people = 1200000;
     static int year = 365;
     static int count;
-   static long value=0;
+    static long value=0;
 
-   static int i=10;
-   static int j=1;
-   static int k;
+    static int i=10;
+    static int j=1;
+    static int k;
+
     public static void main(String[] args) {
-            //recursion();
-            method_2();
+        method_2();
     }
 
     /*
