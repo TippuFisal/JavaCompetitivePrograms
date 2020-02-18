@@ -20,6 +20,7 @@ public class Task_6 {
     public static void main(String[] args) {
         method_2();
     }
+
 // Correct Answer Refered...
     public static void method_2(){
         Scanner input = new Scanner(System.in);
@@ -38,18 +39,4 @@ public class Task_6 {
 
 
     }
-
-    public static void method_3(){
-        int disk = 100;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter Created Value");
-        int cre = scanner.nextInt();
-        System.out.println("Enter Deleted Value");
-        int dlt = scanner.nextInt();
-        int used = (cre-dlt);
-        System.out.println("Used space are "+used);
-        int free = disk-used;
-        System.out.println("Free Space are "+ free);
-    }
-
 }
